@@ -14,29 +14,29 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="container__conteudo">
-            <div class="container__informacoes">
-                <div class="container__texto">
-                    <h1>Adivinhe o <span class="container__texto-azul">numero secreto</span></h1>
-
-                    <p class="texto__paragrafo">Escolha um número entre 1 a 40 (Boa Sorte!)</p>
-                </div>
-                <input type="number" min="1" max="10" class="container__input">
-                <div class="chutecontainer__botoes">
-                    <button onclick="confirmarChute()" class="container__botao">Chutar</button>
-                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
-                </div>
-            </div>
-            <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
+  <div class="container">
+    <div class="container__conteudo">
+      <div class="container__informacoes">
+        <div class="container__texto">
+          <h1>Adivinhe o <span class="container__texto-azul">número secreto</span></h1>
+          <p class="texto__paragrafo">Escolha um número entre 1 e 40 (Boa sorte!)</p>
         </div>
+
+        <!-- alinhar max ao jogo: 40 (ou deixe sem max e só o JS define) -->
+        <input type="number" min="1" max="40" class="container__input">
+
+        <!-- classe corrigida para bater com o CSS -->
+        <div class="container__botoes">
+          <!-- manter confirmarChute ou trocar para verificarChute -->
+          <button onclick="confirmarChute()" class="container__botao">Chutar</button>
+          <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
+        </div>
+      </div>
+
+      <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
     </div>
+  </div>
 
-
-
-
-    <script src="app.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
-
 </html>
