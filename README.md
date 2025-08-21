@@ -30,13 +30,7 @@ Um jogo simples em HTML, CSS e JavaScript onde o usuário tenta adivinhar um nú
 > Dica: o Live Server é útil quando você muda arquivos com frequência e quer recarregamento automático.
 
 ## 🕹️ Como jogar
-1. Leia a mensagem “Escolha um número entre X e Y”
+1. Leia a mensagem “Escolha um número entre 1 e 40”
 2. Digite seu palpite no campo numérico e clique em **Chutar**
 3. O jogo informa se o número secreto é **maior** ou **menor**
 4. Ao acertar, aparece a contagem de tentativas e o botão **Novo jogo**
-
-## ⚙️ Configurações importantes
-- **Limite do jogo**  
-  Defina no `app.js`:
-  ```js
-  let numeroLimite = 40; // ajuste aqui o limite superior
