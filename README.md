@@ -19,7 +19,7 @@ Um jogo simples em HTML, CSS e JavaScript onde o usuário tenta adivinhar um nú
 
 ## ▶️ Como executar
 **Opção 1 (mais simples)**
-1. Baixe/clon e o repositório
+1. Baixe/clone o repositório
 2. Abra o arquivo `index.html` no navegador (duplo clique)
 
 **Opção 2 (VS Code + Live Server)**
