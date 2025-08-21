@@ -1,62 +1,42 @@
-<h1 align="center">🎲 Jogo do Número Secreto</h1>
+# Jogo do Número Secreto
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-ativo-2ea44f?style=for-the-badge">
-  <img src="https://img.shields.io/badge/feito%20com-HTML%20%7C%20CSS%20%7C%20JS-1f6feb?style=for-the-badge">
-</p>
+Um jogo simples em HTML, CSS e JavaScript onde o usuário tenta adivinhar um número secreto dentro de um intervalo configurável.
 
-<p align="center">
-  Um mini–jogo de lógica em JavaScript: adivinhe o número secreto dentro de um intervalo.
-</p>
-
----
-
-## 📑 Índice
-- [Sobre](#-sobre)
-- [Demonstração](#-demonstração)
-- [Tecnologias](#-tecnologias)
-- [Como executar](#-como-executar)
-- [Como jogar](#-como-jogar)
-- [Configurações úteis](#-configurações-úteis)
-- [Estrutura do projeto](#-estrutura-do-projeto)
-- [Acessibilidade](#-acessibilidade)
-- [Boas práticas de Git](#-boas-práticas-de-git)
-- [Contribuindo](#-contribuindo)
-- [Roadmap](#-roadmap)
-- [Autores](#-autores)
-- [Licença](#-licença)
-
----
-
-## 📌 Sobre
-O objetivo é acertar o **número secreto** sorteado em um intervalo definido no código.  
-O jogo dá dicas (“maior”/“menor”) e anuncia por voz as mensagens principais.
-
----
-
-## 🖥️ Demonstração
-> (Opcional) Adicione aqui screenshots ou um GIF do jogo em execução.  
-> Ex.: `img/screenshot.png`
-
----
+## ✨ Sobre
+- Projeto didático para praticar Git/GitHub, versionamento e colaboração.
+- Traz exemplos de `commit`, `push`, `pull`, `gitignore`, README e boas práticas.
+- Inclui síntese de voz para acessibilidade (pode ser desligada facilmente).
 
 ## 🧰 Tecnologias
-- **HTML5** — marcação
-- **CSS3** — layout e responsividade
-- **JavaScript** — regras do jogo e sorteio
-- **ResponsiveVoice** — síntese de voz para as mensagens (TTS)
+- HTML
+- CSS
+- JavaScript (DOM, Math.random)
+- (Opcional) ResponsiveVoice para leitura de textos em voz alta
 
----
+## ✅ Requisitos
+- Navegador moderno
+- Conexão com a internet **apenas** se a síntese de voz estiver ativa (CDN do ResponsiveVoice)
 
-## 🚀 Como executar
-### Opção 1 — Simples
-1. Baixe/clique em **Code → Download ZIP** (ou faça `git clone`).
-2. Abra **index.html** diretamente no seu navegador.
+## ▶️ Como executar
+**Opção 1 (mais simples)**
+1. Baixe/clon e o repositório
+2. Abra o arquivo `index.html` no navegador (duplo clique)
 
-### Opção 2 — Com servidor local (recomendado)
-- **VS Code + Live Server**: clique com o botão direito em `index.html` → *Open with Live Server*.  
-- **Python 3**:
-  ```bash
-  # na pasta do projeto
-  python -m http.server 5500
-  # acesse http://localhost:5500
+**Opção 2 (VS Code + Live Server)**
+1. Abra a pasta do projeto no VS Code  
+2. Instale a extensão **Live Server**
+3. Clique em **Go Live** (ou botão “Abrir com Live Server”) no rodapé do VS Code
+
+> Dica: o Live Server é útil quando você muda arquivos com frequência e quer recarregamento automático.
+
+## 🕹️ Como jogar
+1. Leia a mensagem “Escolha um número entre X e Y”
+2. Digite seu palpite no campo numérico e clique em **Chutar**
+3. O jogo informa se o número secreto é **maior** ou **menor**
+4. Ao acertar, aparece a contagem de tentativas e o botão **Novo jogo**
+
+## ⚙️ Configurações importantes
+- **Limite do jogo**  
+  Defina no `app.js`:
+  ```js
+  let numeroLimite = 40; // ajuste aqui o limite superior
